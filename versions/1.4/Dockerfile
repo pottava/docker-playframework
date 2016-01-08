@@ -10,7 +10,6 @@ RUN apk --no-cache add --virtual build-dependencies curl unzip \
       && rm -rf /tmp/play-1.4.1.zip \
             /opt/play-1.4.1/COPYING \
             /opt/play-1.4.1/documentation \
-            /opt/play-1.4.1/framework/src \
             /opt/play-1.4.1/framework/test-src \
             /opt/play-1.4.1/modules/docviewer \
             /opt/play-1.4.1/play.bat \
