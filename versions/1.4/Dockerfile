@@ -11,14 +11,14 @@ RUN apk --no-cache add --virtual build-dependencies curl unzip \
             /opt/play-1.4.1/COPYING \
             /opt/play-1.4.1/documentation \
             /opt/play-1.4.1/framework/test-src \
-            /opt/play-1.4.1/modules/docviewer \
             /opt/play-1.4.1/play.bat \
             /opt/play-1.4.1/python/*.dll \
             /opt/play-1.4.1/python/python.* \
             /opt/play-1.4.1/README.textile \
             /opt/play-1.4.1/samples-and-tests \
             /opt/play-1.4.1/support \
-      && ln -s /opt/play-1.4.1/play /usr/local/bin \
+      && ln -sf /opt/play-1.4.1/play /usr/local/bin \
+      && ln -sf /opt/play-1.4.1 /play-1.4.1
       && apk del build-dependencies
 
 CMD ["play"]
