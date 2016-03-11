@@ -19,6 +19,6 @@ RUN apk --no-cache add --virtual build-dependencies curl unzip \
             /opt/play-1.4.1/support \
       && ln -sf /opt/play-1.4.1/play /usr/local/bin \
       && ln -sf /opt/play-1.4.1 /play-1.4.1 \
-      && apk del build-dependencies
+      && apk del --purge build-dependencies
 
 CMD ["play"]
