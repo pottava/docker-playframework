@@ -1,7 +1,7 @@
 # Play framework v1.4
 # docker run --rm pottava/play:1.4 
 
-FROM pottava/java:7
+FROM pottava/java:8
 
 RUN apk --no-cache add --virtual build-dependencies curl unzip \
       && apk --no-cache add python \
